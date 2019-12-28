@@ -29,7 +29,7 @@ public class UserController {
 
     }
 
-    @GetMapping("/get_info/{id}")
+    @DeleteMapping("/get_info/{id}")
     public User getInfo(@PathVariable (value = "id")String id) throws IOException {
 
         log.info("user for search {}",id);
